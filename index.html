@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de notas Unisc EAD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <form onsubmit="calculaNota(event)">
+            <label for="notaUAs">Nota tirada nas UAs</label>
+            <input type="number" step="any" id="notaUAs" />
+            <br /><br />
+            <label for="notaMinProva">Nota mínima a ser tirada na prova para a nota das UAs</label>
+            <input type="number" id="notaMinProva" disabled />
+            <button type="submit">Calcular nota mínima para a prova</button>
+        </form>
+        <div id="explanaCalculo"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
